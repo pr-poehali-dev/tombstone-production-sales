@@ -86,7 +86,10 @@ export default function Index() {
         <nav className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Icon name="Mountain" size={32} className="text-primary" />
+              <div className="relative">
+                <Icon name="Box" size={32} className="text-primary" />
+                <Icon name="Users" size={14} className="text-accent absolute -top-1 -right-1" />
+              </div>
               <span className="text-2xl font-bold text-primary">ВРЕМЯ ПАМЯТИ</span>
             </div>
             <div className="hidden md:flex items-center gap-8">
@@ -385,7 +388,10 @@ export default function Index() {
       <footer className="bg-secondary text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Icon name="Mountain" size={28} className="text-accent" />
+            <div className="relative">
+              <Icon name="Box" size={28} className="text-accent" />
+              <Icon name="Users" size={12} className="text-white absolute -top-1 -right-1" />
+            </div>
             <span className="text-xl font-bold">ВРЕМЯ ПАМЯТИ</span>
           </div>
           <p className="text-white/70 mb-4">Достойная память о ваших близких</p>
