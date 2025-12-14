@@ -155,58 +155,6 @@ export default function Index() {
       </section>
 
       <section id="catalog" className="py-16 container mx-auto px-4">
-        <div className="text-center mb-12 animate-slide-up">
-          <h2 className="text-4xl font-bold mb-4 text-foreground">Каталог памятников</h2>
-          <p className="text-muted-foreground text-lg">Широкий выбор памятников из различных материалов</p>
-        </div>
-
-        <div className="flex justify-center gap-3 mb-8 flex-wrap">
-          {['Все', 'Гранит', 'Мрамор', 'Габбро'].map(filter => (
-            <Button
-              key={filter}
-              variant={activeFilter === filter ? 'default' : 'outline'}
-              onClick={() => setActiveFilter(filter)}
-              className={activeFilter === filter ? 'bg-primary' : ''}
-            >
-              {filter}
-            </Button>
-          ))}
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {filteredMonuments.map((monument, index) => (
-            <Card 
-              key={monument.id} 
-              className="overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer group animate-scale-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-              onClick={() => setSelectedMonument(monument)}
-            >
-              <div className="relative h-64 overflow-hidden">
-                <img 
-                  src={monument.image} 
-                  alt={monument.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <Badge className="absolute top-3 right-3 bg-accent text-accent-foreground">
-                  {monument.material}
-                </Badge>
-              </div>
-              <CardHeader>
-                <CardTitle className="text-xl">{monument.title}</CardTitle>
-                <CardDescription>{monument.size}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-primary">{monument.price}</span>
-                  <Button size="sm" className="bg-primary hover:bg-primary/90">
-                    <Icon name="Eye" size={16} className="mr-1" />
-                    Смотреть
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
       </section>
 
       <section id="services" className="py-16 bg-muted">
