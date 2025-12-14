@@ -87,7 +87,7 @@ export default function Index() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Icon name="Mountain" size={32} className="text-primary" />
-              <span className="text-2xl font-bold text-primary">ПамятникМастер</span>
+              <span className="text-2xl font-bold text-primary">ВРЕМЯ ПАМЯТИ</span>
             </div>
             <div className="hidden md:flex items-center gap-8">
               <a href="#catalog" className="text-foreground hover:text-primary transition-colors">Каталог</a>
@@ -386,10 +386,10 @@ export default function Index() {
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Icon name="Mountain" size={28} className="text-accent" />
-            <span className="text-xl font-bold">ПамятникМастер</span>
+            <span className="text-xl font-bold">ВРЕМЯ ПАМЯТИ</span>
           </div>
           <p className="text-white/70 mb-4">Достойная память о ваших близких</p>
-          <p className="text-white/50 text-sm">© 2024 ПамятникМастер. Все права защищены.</p>
+          <p className="text-white/50 text-sm">© 2024 ВРЕМЯ ПАМЯТИ. Все права защищены.</p>
         </div>
       </footer>
 
