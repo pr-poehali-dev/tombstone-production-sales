@@ -74,6 +74,7 @@ export default function Index() {
   const [selectedMonument, setSelectedMonument] = useState<Monument | null>(null);
   const [activeFilter, setActiveFilter] = useState('Все');
   const [show3DViewer, setShow3DViewer] = useState(false);
+  const [viewerMonument, setViewerMonument] = useState<Monument>(monuments[0]);
 
   const filteredMonuments = activeFilter === 'Все' 
     ? monuments 
@@ -430,6 +431,7 @@ export default function Index() {
                 </div>
                 <Button 
                   onClick={() => {
+                    setViewerMonument(selectedMonument);
                     setShow3DViewer(true);
                     setSelectedMonument(null);
                   }}
@@ -452,8 +454,8 @@ export default function Index() {
       <Dialog open={show3DViewer} onOpenChange={setShow3DViewer}>
         <DialogContent className="max-w-4xl">
           <Monument3DViewer 
-            monumentName={selectedMonument?.title || monuments[0].title}
-            monumentImage={selectedMonument?.image || monuments[0].image}
+            monumentName={viewerMonument.title}
+            monumentImage={viewerMonument.image}
           />
         </DialogContent>
       </Dialog>
