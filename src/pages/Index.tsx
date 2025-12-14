@@ -37,6 +37,15 @@ const monuments: Monument[] = [
   },
   {
     id: 3,
+    title: 'Гранит Житомир',
+    material: 'Гранит',
+    price: 'от 48 000 ₽',
+    image: 'https://cdn.poehali.dev/projects/cef4fa2f-9dfb-4c7b-87af-06958110b565/files/33a1f7bb-262c-4f73-a06f-8186f60d0dc7.jpg',
+    description: 'Благородный красно-коричневый гранит из Житомира с уникальным природным узором',
+    size: '100×50×8 см'
+  },
+  {
+    id: 4,
     title: 'Мрамор с орнаментом',
     material: 'Мрамор',
     price: 'от 65 000 ₽',
@@ -45,7 +54,7 @@ const monuments: Monument[] = [
     size: '120×60×10 см'
   },
   {
-    id: 4,
+    id: 5,
     title: 'Габбро-диабаз',
     material: 'Габбро',
     price: 'от 38 000 ₽',
@@ -54,7 +63,7 @@ const monuments: Monument[] = [
     size: '90×45×8 см'
   },
   {
-    id: 5,
+    id: 6,
     title: 'Комбинированный',
     material: 'Гранит + Мрамор',
     price: 'от 78 000 ₽',
