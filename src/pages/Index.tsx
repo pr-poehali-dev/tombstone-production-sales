@@ -19,15 +19,6 @@ interface Monument {
 const monuments: Monument[] = [
   {
     id: 1,
-    title: 'Классический гранит',
-    material: 'Гранит',
-    price: 'от 45 000 ₽',
-    image: 'https://cdn.poehali.dev/projects/cef4fa2f-9dfb-4c7b-87af-06958110b565/files/5958a8ba-62af-4f96-83eb-3d134924a594.jpg',
-    description: 'Элегантный памятник из чёрного гранита с полированной поверхностью',
-    size: '100×50×8 см'
-  },
-  {
-    id: 2,
     title: 'Гранит Габбро',
     material: 'Гранит',
     price: 'от 42 000 ₽',
@@ -36,7 +27,7 @@ const monuments: Monument[] = [
     size: '95×48×8 см'
   },
   {
-    id: 3,
+    id: 2,
     title: 'Гранит карельский',
     material: 'Гранит',
     price: 'от 52 000 ₽',
@@ -45,7 +36,7 @@ const monuments: Monument[] = [
     size: '105×52×9 см'
   },
   {
-    id: 4,
+    id: 3,
     title: 'Мрамор с орнаментом',
     material: 'Мрамор',
     price: 'от 65 000 ₽',
@@ -54,7 +45,7 @@ const monuments: Monument[] = [
     size: '120×60×10 см'
   },
   {
-    id: 5,
+    id: 4,
     title: 'Габбро-диабаз',
     material: 'Габбро',
     price: 'от 38 000 ₽',
@@ -63,7 +54,7 @@ const monuments: Monument[] = [
     size: '90×45×8 см'
   },
   {
-    id: 6,
+    id: 5,
     title: 'Комбинированный',
     material: 'Гранит + Мрамор',
     price: 'от 78 000 ₽',
